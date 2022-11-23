@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-//Organisms
-//import 'organisms/imageHeader.dart';
+//Organismsとは、複数のmoleculesやatomsを組み合わせて作られるもの。
+import 'organisms/imageHeader.dart';
 
 class IndexTemplate extends StatefulWidget {
   IndexTemplate({Key key, this.data}) : super(key: key);
@@ -19,6 +19,7 @@ class _IndexTemplateState extends State<IndexTemplate> {
         title: Text(widget.data['title']),
       ),
       body: SingleChildScrollView(
+        child: ImageHeaderOrganisms(data: widget.data['header']),
       ),
     );
   }
